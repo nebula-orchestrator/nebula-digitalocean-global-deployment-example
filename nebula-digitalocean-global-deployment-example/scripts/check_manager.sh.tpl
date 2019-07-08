@@ -1,0 +1,1 @@
+until $(curl --output /dev/null --silent --head --fail -H 'authorization: Basic bmVidWxhOm5lYnVsYQ==' -H 'cache-control: no-cache' http://${manager_host}/api/v2/status); do echo "Waiting on the manager API to become available..." sleep 3; done
