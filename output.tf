@@ -7,3 +7,8 @@ output "workers_ip_list" {
 output "manager_ip" {
   value = module.run_example.manager_ip
 }
+
+# print the docker command to add more workers
+output "docker_run_command_to_add_more_workers" {
+  value = module.run_example.docker_run_command_to_add_more_workers
+}
