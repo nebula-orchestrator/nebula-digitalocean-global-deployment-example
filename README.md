@@ -2,17 +2,24 @@
 
 A simple example that runs a Nebula manager with workers spread out across the world, the terraform output will return the manger_ip which you can connect to on port 80 with the username `nebula` and password `nebula` & a list of all workers which by default will run the example app on port `81`.
 
-Change the run.tf (in repo root folder) to your variables & run `terraform apply` from the repo root to get a nebula cluster that includes a single worker and as many workers you gave it (default 9) spread out across digital regions (default 9 regions).
 
-Requires: 
+## Running instructions
+
+ 1. clone the repo
+ 2. cd into the repo folder
+ 3. Change the run.tf (in repo root folder) to your variables 
+ 4. run `terraform apply`.
+ 
+You now have a nebula cluster that includes a single manager and as many workers you gave it (default 9) spread out across digital regions (default 9 regions).
+ 
+## Requires: 
 
  - terraform 0.12.0 or higher
  - DIGITALOCEAN_TOKEN 
  - an ssh pub key pre uploaded to digital ocean
  - curl installed on the machine running terraform
  
- 
-Configuration variables  :
+## Configuration variables  :
 
  - server_size - the size of the Nebula manager server - defaults to `2gb`
  - server_region_droplet - the region where the nebula manager server will reside - defaults to `nyc3`
