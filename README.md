@@ -15,7 +15,7 @@ You now have a nebula cluster that includes a single manager and as many workers
 ## Requires: 
 
  - terraform 0.12.0 or higher
- - DIGITALOCEAN_TOKEN 
+ - [DIGITALOCEAN_TOKEN](https://www.terraform.io/docs/providers/do/index.html#token) envvar set to your digital ocean token
  - an ssh pub key pre uploaded to digital ocean
  - curl installed on the machine running terraform
  

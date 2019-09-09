@@ -42,8 +42,3 @@ variable "worker_size" {
   type = "string"
   default = "2gb"
 }
-
-# do token
-variable "digital_ocean_token" {
-  type = "string"
-}

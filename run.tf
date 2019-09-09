@@ -13,5 +13,4 @@ module "run_example" {
     "tor1",
     "blr1"
   ]
-  digital_ocean_token = "your_digitalocean_token_here"
 }
