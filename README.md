@@ -27,7 +27,7 @@ You now have a nebula cluster that includes a single manager and as many workers
  - worker_count - the number of Nebula workers to create - defaults to `9`
  - worker_region_droplet - the regions where the workers will be deployed on - defaults to `["nyc1", "nyc3", "sfo2", "ams3", "sgp1", "lon1", "fra1", "tor1", "blr1"]`
  - worker_size - the size of the servers used in Nebula - note that at least 1GB is needed as it uses a RancherOS for simplicity sake - defaults to `2gb`
- - digital_ocean_token - the token used to connect to your digital ocean account - required
+ - DIGITALOCEAN_TOKEN - the token used to connect to your digital ocean account - needs to be declared as an envvar - required
  
  Should you want to ssh to the droplets for any reason (not needed for the system to work) you can do so with the private key & the `centos` user for the manager and `rancher` user for the workers.
  
