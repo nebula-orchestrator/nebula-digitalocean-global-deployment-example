@@ -1,29 +1,29 @@
 # the server size you want
 variable "server_size" {
-  type = "string"
+  type = string
   default = "2gb"
 }
 
 # the region where server droplets will be deployed
 variable "server_region_droplet" {
-  type = "string"
+  type = string
   default = "nyc3"
 }
 
 # name of a single ssh pub key to attach to the instance
 variable "ssh_key_name" {
-  type = "string"
+  type = string
 }
 
 # the count of how many servers you want
 variable "worker_count" {
-  type = "string"
+  type = string
   default = 9
 }
 
 # a list of regions where droplets will be deployed
 variable "worker_region_droplet" {
-  type = "list"
+  type = list(any)
   default = [
     "nyc1",
     "nyc3",
@@ -39,6 +39,6 @@ variable "worker_region_droplet" {
 
 # the server size you want
 variable "worker_size" {
-  type = "string"
+  type = string
   default = "2gb"
 }
